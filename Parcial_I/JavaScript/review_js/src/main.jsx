@@ -1,29 +1,130 @@
-const average = 6.5;
-let status = "";
-
-status = average >= 7 ? "Approved" : "Failed";
-
-console.log(`The student's status is: ${status}`);
-
-/*
-if (average >= 7) {
-    status = "Approved";
-} else {
-    status = "Failed";
+const paper = {
+    product: 'Paper',
+    price: 10.0,
+    quantity: 2,
 }
 
-console.log(`The student's status is: ${status}`);
+const invoices = [
+    {
+        id: 1,
+        name: 'Invoice 1',
+        date: new Date(),
+        clientInformation: {
+            id: 1,
+            name: 'John',
+            lastName: 'Doe',
+            age: 30,
+        },
+        items: [
+            {
+                id: 1,
+                product: 'Item invoice 1 1',
+                price: 10.0,
+                quantity: 2,
+            },
+            {
+                id: 2,
+                product: 'Item invoice 1 2',
+                price: 20.0,
+                quantity: 1,
+            },
+            {
+                id: 3,
+                product: 'Item invoice 1 3',
+                price: 30.0,
+                quantity: 3,
+            }
+        ],
+    },
+    {
+        id: 2,
+        name: 'Invoice 2',
+        date: new Date(),
+        clientInformation: {
+            id: 2,
+            name: 'Jane',
+            lastName: 'Doe',
+            age: 25,
+        },
+        items: [
+            {
+                id: 1,
+                product: 'Item invoice 2 1',
+                price: 10.0,
+                quantity: 1,
+            },
+            {
+                id: 2,
+                product: 'Item invoice 2 2',
+                price: 20.0,
+                quantity: 2,
+            },
+            {
+                id: 3,
+                product: 'Item invoice 2 3',
+                price: 30.0,
+                quantity: 1,
+            },
+            paper,
+        ],
+    },
+    {
+        id: 3,
+        name: 'Invoice 3',
+        date: new Date(),
+        clientInformation: {
+            id: 3,
+            name: 'Mary',
+            lastName: 'Jane',
+            age: 28,
+        },
+        items: [
+            {
+                id: 1,
+                product: 'Item invoice 3 1',
+                price: 10.0,
+                quantity: 3,
+            },
+        ],
+    }
+]
+
+/*
+const invoicesName = invoices.map((i) => { return i.name });
+
+console.log(invoicesName);
+
+const invoicesClientName = invoices.map((i) => { return i.clientInformation.name });
+
+console.log(invoicesClientName);
 */
 
-console.log(`the student's status is: ${average >= 7 ? "Approved" : "Failed"}`);
+// Find method
+const invoiceById = invoices.find((i) => { return i.id === 3 });
 
-let max = 0;
+console.log(invoiceById);
 
-const a = 10;
-const b = 20;
-const c = 30;
+const invoiceByName = invoices.find((i) => { return i.name === 'Invoice 2' });
 
-max = a > b ? a : b;
-max = max > c ? max : c;
+console.log(invoiceByName);
 
-console.log(`The maximum value is: ${max}`);
+const invoiceByClientName = invoices.find((i) => { return i.clientInformation.name === 'Mary' });
+
+console.log(invoiceByClientName);
+
+// Filter method
+console.log("Aplication of the filter method");
+const invoicesFilter = invoices.filter((i ) => i.id > 1);
+
+console.log(invoicesFilter);
+
+ // the method includes() is used to check if the array contains a specific element. 
+ // In this case, we are checking if the items array of each invoice contains the paper object.
+ //  If it does, the invoice will be included in the filtered array.
+console.log("Aplication of the filter method with includes() method");
+const invoicesFilterTwo = invoices.filter((i) => i.items.includes(paper));
+console.log(invoicesFilterTwo);
+
+// Some method 
+const result = invoices.some((i) => i.clientInformation.name === 'John');
+console.log(result); // Output: true
