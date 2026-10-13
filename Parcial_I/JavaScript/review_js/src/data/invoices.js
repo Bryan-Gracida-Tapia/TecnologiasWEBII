@@ -93,6 +93,20 @@ const invoiceByClient = (clientName) => {
     return invoices.find((i) => i.clientInformation.name === clientName)
 }
 
+export const findInvoiceByName = (name) => {
+    const promise = new Promise((resolve, reject) => {
+        setTimeout(() => {
+            const result = invoiceByClient(name)
+            if (result) {
+                resolve(result)
+            } else {
+                reject(`Error: Not find the invoice by client name ${name}`)
+            }
+        }, 2500);
+    });
+    return promise;
+}
+
 export {
     paper,
     invoices,
