@@ -110,5 +110,6 @@ export const findInvoiceByName = (name) => {
 export {
     paper,
     invoices,
-    invoiceByClient as default
+    invoiceByClient as default,
+    findInvoiceByName 
 }
