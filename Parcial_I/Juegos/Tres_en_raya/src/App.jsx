@@ -1,5 +1,3 @@
-// src/App.jsx
-
 import Game from "./pages/Game";
 import "./styles/game.css";
 
