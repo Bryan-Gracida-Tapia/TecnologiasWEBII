@@ -11,7 +11,7 @@ function PublicationContainer({ publicaciones, traducciones }) {
 
         <h2>{traducciones.publicationsTitle}</h2>
 
-        <p>{traducciones.publicationsDescription}</p>
+        {/*<p>{traducciones.publicationsDescription}</p>*/}
       </div>
 
       {publicaciones.length > 0 ? (

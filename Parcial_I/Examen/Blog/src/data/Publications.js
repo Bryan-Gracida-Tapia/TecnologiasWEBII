@@ -1,26 +1,29 @@
-
 const publications = [
   {
     id: 1,
-    imagen: "/software.jpg",
+    imagen: "/img_prueba.jpg",
     claveTitulo: "software",
-    categoria: "Tecnología",
+    claveCategoria: "technology",
     destacada: true
   },
   {
     id: 2,
-    imagen: "/educacion.jpg",
-    claveTitulo: "inteligenciaArtificial",
-    categoria: "Educación",
+    imagen: "/img_prueba.jpg",
+    claveTitulo: "artificialIntelligence",
+    claveCategoria: "education",
     destacada: false
   },
   {
     id: 3,
-    imagen: "/consultoria.jpg",
-    claveTitulo: "mejoraContinua",
-    categoria: "Consultoría",
+    imagen: "/img_prueba.jpg",
+    claveTitulo: "continuousImprovement",
+    claveCategoria: "consulting",
     destacada: false
   }
+];
+
+const publicationsTwo = [
+  
 ];
 
 export default publications;

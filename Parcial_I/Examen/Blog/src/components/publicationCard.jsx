@@ -1,4 +1,4 @@
-
+import publications from "../data/Publications";
 function PublicationCard({
   imagen,
   titulo,

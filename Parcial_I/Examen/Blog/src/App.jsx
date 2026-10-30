@@ -10,7 +10,7 @@ import traduccionesIngles from "./traductions/en.json";
 import "./styles/global.css";
 
 function App() {
-  const [idioma, establecerIdioma] = useState("es");
+  const [idioma, establecerIdioma] = useState("en");
 
   const traducciones = idioma === "es"
     ? traduccionesEspanol
