@@ -1,0 +1,32 @@
+
+{
+  "author": "Blog de Ideas",
+  "home": "Inicio",
+  "publications": "Publicaciones",
+  "about": "Acerca de",
+  "welcomeLabel": "BLOG DE TECNOLOGÍA",
+  "welcomeTitle": "Ideas que transforman el futuro",
+  "welcomeDescription": "Exploramos la tecnología, la educación y la mejora continua para construir un mundo mejor.",
+  "exploreButton": "Explorar publicaciones",
+  "publicationsLabel": "NUESTRO BLOG",
+  "publicationsTitle": "Últimas publicaciones",
+  "publicationsDescription": "Descubre nuestras ideas y artículos más recientes.",
+  "featured": "Destacada",
+  "readPublication": "Leer publicación",
+  "noPublications": "No hay publicaciones",
+  "allRightsReserved": "Todos los derechos reservados.",
+  "footerMessage": "Compartiendo ideas para un futuro mejor.",
+  "language": "Idioma",
+  "spanish": "Español",
+  "english": "Inglés",
+  "categories": {
+    "technology": "Tecnología",
+    "education": "Educación",
+    "consulting": "Consultoría"
+  },
+  "publicationTitles": {
+    "software": "Software centrado en las personas",
+    "artificialIntelligence": "Inteligencia artificial en el aula",
+    "continuousImprovement": "Mejora continua en las organizaciones"
+  }
+}

@@ -1,0 +1,283 @@
+
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap");
+
+:root {
+  font-family: "DM Sans", sans-serif;
+  color: #005187;
+  background: #edf2ef;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.encabezado {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 22px 8%;
+  background: #fff;
+  border-bottom: 1px solid #dce5e0;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-family: "Manrope", sans-serif;
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.logo-icono {
+  display: grid;
+  width: 42px;
+  height: 42px;
+  place-items: center;
+  border-radius: 12px;
+  background: #005187;
+  color: #d8aa45;
+}
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 28px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.menu a:hover,
+.leer-mas:hover {
+  color: #4d82bc;
+}
+
+.selector-idioma {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #005187;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.selector-idioma select {
+  padding: 9px 12px;
+  border: 1px solid #dce5e0;
+  border-radius: 8px;
+  background: #fff;
+  color: #005187;
+  font: inherit;
+  cursor: pointer;
+}
+
+.selector-idioma select:focus {
+  outline: 2px solid #84b6f4;
+  outline-offset: 2px;
+}
+
+.bienvenida {
+  padding: 100px 8%;
+  background: linear-gradient(135deg, #e0ebf7, #edf2ef);
+  text-align: center;
+}
+
+.etiqueta {
+  color: #4d82bc;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.bienvenida h1 {
+  max-width: 760px;
+  margin: 22px auto;
+  font-family: "Manrope", sans-serif;
+  font-size: clamp(36px, 5vw, 58px);
+  line-height: 1.15;
+  font-weight: 800;
+}
+
+.bienvenida p {
+  max-width: 600px;
+  margin: 0 auto 30px;
+  color: #68756f;
+  font-size: 17px;
+  line-height: 1.8;
+}
+
+.boton {
+  display: inline-block;
+  padding: 14px 24px;
+  border-radius: 8px;
+  background: #005187;
+  color: #fff;
+  font-weight: 600;
+  transition: background 0.2s;
+}
+
+.boton:hover {
+  background: #4d82bc;
+}
+
+.publicaciones {
+  padding: 80px 8%;
+}
+
+.seccion-encabezado {
+  margin-bottom: 36px;
+  text-align: center;
+}
+
+.seccion-encabezado h2 {
+  margin: 12px 0;
+  font-family: "Manrope", sans-serif;
+  font-size: clamp(28px, 4vw, 38px);
+}
+
+.seccion-encabezado p {
+  color: #68756f;
+  line-height: 1.7;
+}
+
+.publicaciones-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 28px;
+}
+
+.tarjeta {
+  overflow: hidden;
+  border: 1px solid #dce5e0;
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: 0 8px 24px rgb(0 81 135 / 6%);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.tarjeta:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 14px 32px rgb(0 81 135 / 12%);
+}
+
+.tarjeta-imagen {
+  display: block;
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  background: #dce5e0;
+}
+
+.tarjeta-contenido {
+  padding: 24px;
+}
+
+.destacada {
+  display: inline-block;
+  margin: 0 8px 12px 0;
+  padding: 6px 10px;
+  border-radius: 6px;
+  background: #fff1cb;
+  color: #805d13;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.categoria {
+  display: inline-block;
+  padding: 6px 10px;
+  border-radius: 6px;
+  background: #e0ebf7;
+  color: #005187;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.tarjeta h3 {
+  min-height: 60px;
+  margin: 18px 0;
+  font-family: "Manrope", sans-serif;
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+.leer-mas {
+  color: #005187;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.sin-publicaciones {
+  padding: 40px;
+  border: 1px dashed #dce5e0;
+  border-radius: 12px;
+  color: #68756f;
+  text-align: center;
+}
+
+.pie-pagina {
+  padding: 30px 8%;
+  background: #005187;
+  color: #fff;
+  text-align: center;
+  font-size: 13px;
+}
+
+.pie-pagina p {
+  margin: 8px 0;
+}
+
+@media (max-width: 900px) {
+  .encabezado {
+    flex-wrap: wrap;
+  }
+
+  .publicaciones-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .encabezado {
+    flex-direction: column;
+    padding: 20px 5%;
+  }
+
+  .menu {
+    justify-content: center;
+    gap: 16px;
+  }
+
+  .bienvenida {
+    padding: 70px 6%;
+  }
+
+  .publicaciones {
+    padding: 55px 6%;
+  }
+
+  .publicaciones-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .tarjeta-imagen {
+    height: 230px;
+  }
+}

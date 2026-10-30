@@ -1,0 +1,32 @@
+
+{
+  "author": "Ideas Blog",
+  "home": "Home",
+  "publications": "Publications",
+  "about": "About",
+  "welcomeLabel": "TECHNOLOGY BLOG",
+  "welcomeTitle": "Ideas that transform the future",
+  "welcomeDescription": "We explore technology, education, and continuous improvement to build a better world.",
+  "exploreButton": "Explore publications",
+  "publicationsLabel": "OUR BLOG",
+  "publicationsTitle": "Latest publications",
+  "publicationsDescription": "Discover our latest ideas and articles.",
+  "featured": "Featured",
+  "readPublication": "Read publication",
+  "noPublications": "No publications available",
+  "allRightsReserved": "All rights reserved.",
+  "footerMessage": "Sharing ideas for a better future.",
+  "language": "Language",
+  "spanish": "Spanish",
+  "english": "English",
+  "categories": {
+    "technology": "Technology",
+    "education": "Education",
+    "consulting": "Consulting"
+  },
+  "publicationTitles": {
+    "software": "Human-Centered Software",
+    "artificialIntelligence": "Artificial Intelligence in the Classroom",
+    "continuousImprovement": "Continuous Improvement in Organizations"
+  }
+}
